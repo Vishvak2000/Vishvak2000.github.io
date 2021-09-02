@@ -1,0 +1,1869 @@
+{
+  "theme": {
+    "palette": {
+      "bases": {
+        "A": {
+          "main": "#aaa"
+        },
+        "C": {
+          "main": "#aaa"
+        },
+        "G": {
+          "main": "#aaa"
+        },
+        "T": {
+          "main": "#aaa"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "MsaView",
+      "url": "https://unpkg.com/jbrowse-plugin-msaview/dist/jbrowse-plugin-msaview.umd.production.min.js"
+    }
+  ],
+  "assemblies": [
+    {
+      "name": "Core",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Core-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "Core.fasta.gz"
+          },
+          "faiLocation": {
+            "uri": "Core.fasta.gz.fai"
+          },
+          "gziLocation": {
+            "uri": "Core.fasta.gz.gzi"
+          }
+        }
+      }
+    },
+    {
+      "name": "S",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "S-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "S.fasta.gz"
+          },
+          "faiLocation": {
+            "uri": "S.fasta.gz.fai"
+          },
+          "gziLocation": {
+            "uri": "S.fasta.gz.gzi"
+          }
+        }
+      },
+      "aliases": [
+        "S"
+      ]
+    },
+    {
+      "name": "Pol",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "Pol-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "Pol.fasta.gz"
+          },
+          "faiLocation": {
+            "uri": "Pol.fasta.gz.fai"
+          },
+          "gziLocation": {
+            "uri": "Pol.fasta.gz.gzi"
+          }
+        }
+      }
+    },
+    {
+      "name": "X",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "X-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "X.fasta.gz"
+          },
+          "faiLocation": {
+            "uri": "X.fasta.gz.fai"
+          },
+          "gziLocation": {
+            "uri": "X.fasta.gz.gzi"
+          }
+        }
+      }
+    },
+    {
+      "name": "HBV Genome",
+      "sequence": {
+        "type": "ReferenceSequenceTrack",
+        "trackId": "HBV Genome-ReferenceSequenceTrack",
+        "adapter": {
+          "type": "BgzipFastaAdapter",
+          "fastaLocation": {
+            "uri": "HBV Genome.fasta.gz"
+          },
+          "faiLocation": {
+            "uri": "HBV Genome.fasta.gz.fai"
+          },
+          "gziLocation": {
+            "uri": "HBV Genome.fasta.gz.gzi"
+          }
+        }
+      }
+    }
+  ],
+  "configuration": {},
+  "connections": [],
+  "defaultSession": {
+    "id": "FOabSQLrh",
+    "name": "New session 8/12/2021, 4:55:41 PM",
+    "margin": 0,
+    "drawerWidth": 384,
+    "views": [
+      {
+        "id": "FMHTO6IE8",
+        "type": "LinearGenomeView",
+        "offsetPx": -99,
+        "bpPerPx": 0.10773351968320521,
+        "displayedRegions": [
+          {
+            "refName": "Core",
+            "start": 0,
+            "end": 185,
+            "reversed": false,
+            "assemblyName": "Core"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "tKLSngKM0",
+            "type": "ReferenceSequenceTrack",
+            "configuration": "Core-ReferenceSequenceTrack",
+            "displays": [
+              {
+                "id": "-aFTTfE5D0",
+                "type": "LinearReferenceSequenceDisplay",
+                "height": 30,
+                "configuration": "Core-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
+                "showForward": true,
+                "showReverse": false,
+                "showTranslation": false
+              }
+            ]
+          },
+          {
+            "id": "CqKe_TY3Y",
+            "type": "QuantitativeTrack",
+            "configuration": "Genebank_Core_All_Genotypes",
+            "displays": [
+              {
+                "id": "srHzzDVWCi",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genebank_Core_All_Genotypes-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "VixfFEFsg",
+            "type": "QuantitativeTrack",
+            "configuration": "Genebank_C_A",
+            "displays": [
+              {
+                "id": "DPmY3lbTq2",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genebank_C_A-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "lJtjmQkUI",
+            "type": "QuantitativeTrack",
+            "configuration": "Genebank_C_B",
+            "displays": [
+              {
+                "id": "EuVXR3-CT6",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genebank_C_B-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "WG29I0HTpw",
+            "type": "QuantitativeTrack",
+            "configuration": "Genebank_C_C",
+            "displays": [
+              {
+                "id": "UDGAwAnWfi",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genebank_C_C-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "gU0xyKrMQK",
+            "type": "QuantitativeTrack",
+            "configuration": "Genebank_C_D",
+            "displays": [
+              {
+                "id": "n5Y9yWNVvt",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genebank_C_D-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "K_DW2mayy",
+            "type": "FeatureTrack",
+            "configuration": "Core_T-helper_CHB_epitopes.gff",
+            "displays": [
+              {
+                "id": "Sn7CHthqCV",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "Core_T-helper_CHB_epitopes.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "xpNy4kf84",
+            "type": "FeatureTrack",
+            "configuration": "Core_T-helper_AHB_epitopes.sorted.gff",
+            "displays": [
+              {
+                "id": "7dusNgj14L",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "Core_T-helper_AHB_epitopes.sorted.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "YRqnm7g0k",
+            "type": "FeatureTrack",
+            "configuration": "Core_CTL_CHB_epitopes.sorted.gff",
+            "displays": [
+              {
+                "id": "92uWKXkWtp",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "Core_CTL_CHB_epitopes.sorted.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "SWMb_5w69",
+            "type": "FeatureTrack",
+            "configuration": "Core_CTL_AHB_epitopes.sorted.gff",
+            "displays": [
+              {
+                "id": "pE4_f-YBNJ",
+                "type": "LinearBasicDisplay",
+                "height": 160,
+                "configuration": "Core_CTL_AHB_epitopes.sorted.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "VbT67RN6u",
+            "type": "FeatureTrack",
+            "configuration": "Core_Ab_epitopes.gff",
+            "displays": [
+              {
+                "id": "HfJWnx-J9z",
+                "type": "LinearBasicDisplay",
+                "height": 303,
+                "configuration": "Core_Ab_epitopes.gff-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "trackSelectorType": "hierarchical",
+        "trackLabels": "overlapping",
+        "showCenterLine": false
+      },
+      {
+        "id": "ZaV59grgut",
+        "type": "LinearGenomeView",
+        "offsetPx": -127,
+        "bpPerPx": 0.29394473838918284,
+        "displayedRegions": [
+          {
+            "refName": "pre-S1_pre-S2_S",
+            "start": 0,
+            "end": 400,
+            "reversed": false,
+            "assemblyName": "S"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "p2ldB0zxN",
+            "type": "ReferenceSequenceTrack",
+            "configuration": "S-ReferenceSequenceTrack",
+            "displays": [
+              {
+                "id": "rJRX4dmnXo",
+                "type": "LinearReferenceSequenceDisplay",
+                "height": 20,
+                "configuration": "S-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
+                "showForward": true,
+                "showReverse": false,
+                "showTranslation": false
+              }
+            ]
+          },
+          {
+            "id": "JIVjvKCjV",
+            "type": "FeatureTrack",
+            "configuration": "S_pre-S1_pre-S2_S.sorted.gff",
+            "displays": [
+              {
+                "id": "TXpZTf4nEj",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "S_pre-S1_pre-S2_S.sorted.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "ybpLliAH2x",
+            "type": "QuantitativeTrack",
+            "configuration": "Genbank_S_All_genotypes",
+            "displays": [
+              {
+                "id": "VizntQV2ft",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genbank_S_All_genotypes-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "8KG6V-hw4",
+            "type": "QuantitativeTrack",
+            "configuration": "Genbank_S_A",
+            "displays": [
+              {
+                "id": "7ag98cjpIa",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genbank_S_A-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "b3_rvQbz02",
+            "type": "QuantitativeTrack",
+            "configuration": "Genbank_S_B",
+            "displays": [
+              {
+                "id": "Y4aXBNiUBu",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genbank_S_B-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "TD9HuscHAC",
+            "type": "QuantitativeTrack",
+            "configuration": "Genbank_S_C",
+            "displays": [
+              {
+                "id": "Pa1GDxRsPO",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genbank_S_C-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "qNmXOgedl",
+            "type": "QuantitativeTrack",
+            "configuration": "Genbank_S_D",
+            "displays": [
+              {
+                "id": "2bQr4ZVfqU",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genbank_S_D-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "Tsm7OxS8X",
+            "type": "FeatureTrack",
+            "configuration": "S_CTL_AHB.sorted.gff",
+            "displays": [
+              {
+                "id": "mLwDi475E2",
+                "type": "LinearBasicDisplay",
+                "height": 152,
+                "configuration": "S_CTL_AHB.sorted.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "KxpLcNppQ",
+            "type": "FeatureTrack",
+            "configuration": "S_CTL_CHB.sorted.gff",
+            "displays": [
+              {
+                "id": "smVlhATPWB",
+                "type": "LinearBasicDisplay",
+                "height": 156,
+                "configuration": "S_CTL_CHB.sorted.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "Z2G6dfLX6",
+            "type": "FeatureTrack",
+            "configuration": "S_T-helper_CHB_epitopes.gff",
+            "displays": [
+              {
+                "id": "Ld1shKgm1p",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "S_T-helper_CHB_epitopes.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "g3uxjZ-ko",
+            "type": "FeatureTrack",
+            "configuration": "S_T-helper_AHB_epitopes.gff",
+            "displays": [
+              {
+                "id": "MqHjnR-KNB",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "S_T-helper_AHB_epitopes.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "iihtBf_Yd",
+            "type": "FeatureTrack",
+            "configuration": "S_sites_of_interest.gff",
+            "displays": [
+              {
+                "id": "TODcZlPZmu",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "S_sites_of_interest.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "bKCCC7HeH",
+            "type": "FeatureTrack",
+            "configuration": "S_binding_sites.gff",
+            "displays": [
+              {
+                "id": "jPnUPzXbwx",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "S_binding_sites.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "Msh4_Odql",
+            "type": "FeatureTrack",
+            "configuration": "S_vaccine_escape_mutants.gff",
+            "displays": [
+              {
+                "id": "fvYlcNym9Y",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "S_vaccine_escape_mutants.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "MvmFWh-wpO",
+            "type": "FeatureTrack",
+            "configuration": "S_Antibody_epitopes.gff",
+            "displays": [
+              {
+                "id": "KINeoI9yr6",
+                "type": "LinearBasicDisplay",
+                "height": 236,
+                "configuration": "S_Antibody_epitopes.gff-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "trackSelectorType": "hierarchical",
+        "trackLabels": "overlapping",
+        "showCenterLine": false
+      },
+      {
+        "id": "q5Fh1q3Rv",
+        "type": "LinearGenomeView",
+        "offsetPx": -98,
+        "bpPerPx": 0.6209582598471488,
+        "displayedRegions": [
+          {
+            "refName": "Pol",
+            "start": 0,
+            "end": 845,
+            "reversed": false,
+            "assemblyName": "Pol"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "H4e_RZLyX",
+            "type": "ReferenceSequenceTrack",
+            "configuration": "Pol-ReferenceSequenceTrack",
+            "displays": [
+              {
+                "id": "Ib35y2BrtQ",
+                "type": "LinearReferenceSequenceDisplay",
+                "height": 20,
+                "configuration": "Pol-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
+                "showForward": true,
+                "showReverse": false,
+                "showTranslation": false
+              }
+            ]
+          },
+          {
+            "id": "CZEeSffWW",
+            "type": "FeatureTrack",
+            "configuration": "Pol_domains.gff",
+            "displays": [
+              {
+                "id": "YI-v5EAAnc",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "Pol_domains.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "V6nZNrMF3",
+            "type": "QuantitativeTrack",
+            "configuration": "Genbank_All_Genotypes",
+            "displays": [
+              {
+                "id": "qjVb9YIcJ2",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genbank_All_Genotypes-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "Uy2-r9vVzD",
+            "type": "QuantitativeTrack",
+            "configuration": "Genbank_A_Pol",
+            "displays": [
+              {
+                "id": "VnwvYdnkfW",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genbank_A_Pol-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "tLBA-EN6M",
+            "type": "QuantitativeTrack",
+            "configuration": "Genbank_C_Pol",
+            "displays": [
+              {
+                "id": "zpxf-1pL60",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genbank_C_Pol-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "SiZHI-ea-Z",
+            "type": "QuantitativeTrack",
+            "configuration": "Genbank_B_Pol",
+            "displays": [
+              {
+                "id": "07SYxJE2Qm",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genbank_B_Pol-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "yRcBMFFFk",
+            "type": "QuantitativeTrack",
+            "configuration": "Genbank_D_Pol",
+            "displays": [
+              {
+                "id": "1ux_T3T_bF",
+                "type": "LinearWiggleDisplay",
+                "height": 93,
+                "configuration": "Genbank_D_Pol-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "PANUiUvb1H",
+            "type": "FeatureTrack",
+            "configuration": "Pol_CTL_AHB_epitopes.sorted.gff",
+            "displays": [
+              {
+                "id": "0sdB2wm7gt",
+                "type": "LinearBasicDisplay",
+                "height": 214,
+                "configuration": "Pol_CTL_AHB_epitopes.sorted.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "IDaxWGnCx",
+            "type": "FeatureTrack",
+            "configuration": "Pol_CTL_CHB_epitopes.sorted.gff",
+            "displays": [
+              {
+                "id": "U8pA60mRGV",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "Pol_CTL_CHB_epitopes.sorted.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "bQ-3LoVuL",
+            "type": "FeatureTrack",
+            "configuration": "Pol_T-helper_AHB_epitopes.sorted.gff",
+            "displays": [
+              {
+                "id": "Y6VFE_Ykzn",
+                "type": "LinearBasicDisplay",
+                "height": 120,
+                "configuration": "Pol_T-helper_AHB_epitopes.sorted.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "nN8PX18bb",
+            "type": "FeatureTrack",
+            "configuration": "Pol_drug_resistant_mutations.gff",
+            "displays": [
+              {
+                "id": "9CvJrOWCBP",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "Pol_drug_resistant_mutations.gff-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "trackSelectorType": "hierarchical",
+        "trackLabels": "overlapping",
+        "showCenterLine": false
+      },
+      {
+        "id": "ly2jHO0dX",
+        "type": "LinearGenomeView",
+        "offsetPx": -92,
+        "bpPerPx": 0.11316872427983539,
+        "displayedRegions": [
+          {
+            "refName": "X",
+            "start": 0,
+            "end": 154,
+            "reversed": false,
+            "assemblyName": "X"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "eizAr3Oxx",
+            "type": "ReferenceSequenceTrack",
+            "configuration": "X-ReferenceSequenceTrack",
+            "displays": [
+              {
+                "id": "x2Q0JVdOtd",
+                "type": "LinearReferenceSequenceDisplay",
+                "height": 26,
+                "configuration": "X-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
+                "showForward": true,
+                "showReverse": false,
+                "showTranslation": false
+              }
+            ]
+          },
+          {
+            "id": "C3miE1vE1",
+            "type": "QuantitativeTrack",
+            "configuration": "Genbank_X_All_Genotypes",
+            "displays": [
+              {
+                "id": "T-sJoY_E4N",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genbank_X_All_Genotypes-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "38I3ymPbrY",
+            "type": "QuantitativeTrack",
+            "configuration": "Genbank_X_A",
+            "displays": [
+              {
+                "id": "kh428itaSj",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genbank_X_A-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "dNRKF46eSB",
+            "type": "QuantitativeTrack",
+            "configuration": "Genbank_X_B",
+            "displays": [
+              {
+                "id": "ZltzWYm_aA",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genbank_X_B-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "xAWYUewP3n",
+            "type": "QuantitativeTrack",
+            "configuration": "Genbank_X_C",
+            "displays": [
+              {
+                "id": "UOZvrzZAS6",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genbank_X_C-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "OLxh4WytH2",
+            "type": "QuantitativeTrack",
+            "configuration": "Genbank_X_D",
+            "displays": [
+              {
+                "id": "e8dF_1LjWn",
+                "type": "LinearWiggleDisplay",
+                "height": 100,
+                "configuration": "Genbank_X_D-LinearWiggleDisplay",
+                "selectedRendering": "",
+                "resolution": 1,
+                "constraints": {}
+              }
+            ]
+          },
+          {
+            "id": "XLp_ZkeIpF",
+            "type": "FeatureTrack",
+            "configuration": "X_CTL_CHB_epitopes.sorted.gff",
+            "displays": [
+              {
+                "id": "AK3fv7ID4i",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "X_CTL_CHB_epitopes.sorted.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "wzF8DbBZm",
+            "type": "FeatureTrack",
+            "configuration": "X_T-helper_CHB_epitopes.gff",
+            "displays": [
+              {
+                "id": "1CEn0ktH9G",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "X_T-helper_CHB_epitopes.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "-ihf72iQT",
+            "type": "FeatureTrack",
+            "configuration": "X_domains.gff",
+            "displays": [
+              {
+                "id": "gcfzyEZFDT",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "X_domains.gff-LinearBasicDisplay"
+              }
+            ]
+          },
+          {
+            "id": "Co5QRc97N",
+            "type": "FeatureTrack",
+            "configuration": "X_host_protein_binding.gff",
+            "displays": [
+              {
+                "id": "fBulvx0WZD",
+                "type": "LinearBasicDisplay",
+                "height": 214,
+                "configuration": "X_host_protein_binding.gff-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "trackSelectorType": "hierarchical",
+        "trackLabels": "overlapping",
+        "showCenterLine": false
+      },
+      {
+        "id": "8tcCaSomR",
+        "type": "LinearGenomeView",
+        "offsetPx": 214,
+        "bpPerPx": 1.6119560472680006,
+        "displayedRegions": [
+          {
+            "refName": "HBV_Genome",
+            "start": 0,
+            "end": 3221,
+            "reversed": false,
+            "assemblyName": "HBV Genome"
+          }
+        ],
+        "tracks": [
+          {
+            "id": "cvw7ydbAA",
+            "type": "ReferenceSequenceTrack",
+            "configuration": "HBV Genome-ReferenceSequenceTrack",
+            "displays": [
+              {
+                "id": "xh9UoLRZLF",
+                "type": "LinearReferenceSequenceDisplay",
+                "height": 180,
+                "configuration": "HBV Genome-ReferenceSequenceTrack-LinearReferenceSequenceDisplay",
+                "showForward": true,
+                "showReverse": true,
+                "showTranslation": true
+              }
+            ]
+          },
+          {
+            "id": "ePvB4XqCk",
+            "type": "FeatureTrack",
+            "configuration": "HBV Genome.gff",
+            "displays": [
+              {
+                "id": "O0KcGamEPG",
+                "type": "LinearBasicDisplay",
+                "height": 100,
+                "configuration": "HBV Genome.gff-LinearBasicDisplay"
+              }
+            ]
+          }
+        ],
+        "hideHeader": false,
+        "hideHeaderOverview": false,
+        "trackSelectorType": "hierarchical",
+        "trackLabels": "overlapping",
+        "showCenterLine": false
+      }
+    ],
+    "widgets": {
+      "hierarchicalTrackSelector": {
+        "id": "hierarchicalTrackSelector",
+        "type": "HierarchicalTrackSelectorWidget",
+        "collapsed": {},
+        "filterText": "",
+        "view": "FMHTO6IE8",
+        "collapsedCategories": {}
+      },
+      "baseFeature": {
+        "id": "baseFeature",
+        "type": "BaseFeatureWidget",
+        "featureData": {
+          "source": "Geneious",
+          "type": "binding site",
+          "start": 270,
+          "end": 280,
+          "phase": 0,
+          "refName": "pre-S1_pre-S2_S",
+          "name": "LLDYQGMLPV;(A*02)",
+          "uniqueId": "1876599978-offset-108438"
+        },
+        "view": "ZaV59grgut"
+      }
+    },
+    "activeWidgets": {
+      "baseFeature": "baseFeature",
+      "hierarchicalTrackSelector": "hierarchicalTrackSelector"
+    },
+    "connectionInstances": [],
+    "sessionTracks": [],
+    "sessionConnections": [],
+    "sessionAssemblies": [],
+    "sessionPlugins": [],
+    "minimized": false
+  },
+  "tracks": [
+    {
+      "type": "FeatureTrack",
+      "trackId": "Core_CTL_CHB_epitopes.sorted.gff",
+      "name": "Core_CTL_CHB_epitopes.sorted.gff",
+      "assemblyNames": [
+        "Core"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "Core_CTL_CHB_epitopes.sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "Core_CTL_CHB_epitopes.sorted.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Core_CTL_AHB_epitopes.sorted.gff",
+      "name": "Core CTL AHB Epitopes",
+      "assemblyNames": [
+        "Core"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "Core_CTL_AHB_epitopes.sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "Core_CTL_AHB_epitopes.sorted.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Core_Ab_epitopes.gff",
+      "name": "Core Antibody Epitopes",
+      "assemblyNames": [
+        "Core"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "Core_Ab_epitopes.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "Core_Ab_epitopes.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Core_T-helper_AHB_epitopes.sorted.gff",
+      "name": "Core T-helper AHB Epitopes",
+      "assemblyNames": [
+        "Core"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "Core_T-helper_AHB_epitopes.sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "Core_T-helper_AHB_epitopes.sorted.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Core_T-helper_CHB_epitopes.gff",
+      "name": "Core T-helper CHB Epitopes",
+      "assemblyNames": [
+        "Core"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "Core_T-helper_CHB_epitopes.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "Core_T-helper_CHB_epitopes.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genebank_C_A",
+      "name": "Genbank Core A",
+      "assemblyNames": [
+        "Core"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genebank_C_A.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genebank_C_B",
+      "name": "Genbank Core B",
+      "assemblyNames": [
+        "Core"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genebank_C_B.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genebank_C_C",
+      "name": "Genbank Core C",
+      "assemblyNames": [
+        "Core"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genebank_C_C.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genebank_C_D",
+      "name": "Genbank Core D",
+      "assemblyNames": [
+        "Core"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genebank_C_D.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genebank_Core_All_Genotypes",
+      "name": "Genbank Core All Genotypes",
+      "assemblyNames": [
+        "Core"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genebank_Core_All_Genotypes.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_S_A",
+      "name": "Genbank S A Entropy",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_S_A.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_S_B",
+      "name": "Genbank S B Entropy",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_S_B.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_S_c",
+      "name": "Genbank S C Entropy",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_S_c.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_S_C",
+      "name": "Genbank S C Entropy",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_S_C.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_S_D",
+      "name": "Genbank S D Entropy",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_S_D.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_S_All_genotypes",
+      "name": "Genbank All Genotypes Entropy",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_S_All_genotypes.bw"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "S_CTL_AHB.sorted.gff",
+      "name": "S CTL AHB Epitopes",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "S_CTL_AHB.sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "S_CTL_AHB.sorted.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "S_CTL_CHB.sorted.gff",
+      "name": "S CTL CHB Epitopes",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "S_CTL_CHB.sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "S_CTL_CHB.sorted.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "S_T-helper_CHB_epitopes.gff",
+      "name": "S T-helper CHB Epitopes",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "S_T-helper_CHB_epitopes.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "S_T-helper_CHB_epitopes.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "S_T-helper_AHB_epitopes.gff",
+      "name": "S T-helper AHB Epitopes",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "S_T-helper_AHB_epitopes.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "S_T-helper_AHB_epitopes.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "S_sites_of_interest.gff",
+      "name": "S Sites of Interest",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "S_sites_of_interest.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "S_sites_of_interest.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "S_binding_sites.gff",
+      "name": "S binding sites",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "S_binding_sites.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "S_binding_sites.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "S_vaccine_escape_mutants.gff",
+      "name": "S vaccine escape mutants",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "S_vaccine_escape_mutants.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "S_vaccine_escape_mutants.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "S_pre-S1_pre-S2_S.sorted.gff",
+      "name": "pre-S1 pre-S2 S",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "S_pre-S1_pre-S2_S.sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "S_pre-S1_pre-S2_S.sorted.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "S_Antibody_epitopes.gff",
+      "name": "S Anitbody Epitopes",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "S_Antibody_epitopes.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "S_Antibody_epitopes.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_A_Pol",
+      "name": "Genbank Pol A Entropy",
+      "assemblyNames": [
+        "Pol"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_A_Pol.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_C_Pol",
+      "name": "Genbank Pol C Entropy",
+      "assemblyNames": [
+        "Pol"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_C_Pol.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_B_Pol",
+      "name": "Genbank Pol B Entropy",
+      "assemblyNames": [
+        "Pol"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_B_Pol.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_D_Pol",
+      "name": "Genbank Pol D Entropy",
+      "assemblyNames": [
+        "Pol"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_D_Pol.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_All_Genotypes",
+      "name": "Genbank Pol All Genotypes Entropy",
+      "assemblyNames": [
+        "Pol"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_All_Genotypes.bw"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Pol_CTL_AHB_epitopes.sorted.gff",
+      "name": "Pol CTL AHB Epitopes",
+      "assemblyNames": [
+        "Pol"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "Pol_CTL_AHB_epitopes.sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "Pol_CTL_AHB_epitopes.sorted.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Pol_CTL_CHB_epitopes.sorted.gff",
+      "name": "Pol CTL CHB Epitopes",
+      "assemblyNames": [
+        "Pol"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "Pol_CTL_CHB_epitopes.sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "Pol_CTL_CHB_epitopes.sorted.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Pol_T-helper_AHB_epitopes.sorted.gff",
+      "name": "Pol T-helper AHB Epitopes",
+      "assemblyNames": [
+        "Pol"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "Pol_T-helper_AHB_epitopes.sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "Pol_T-helper_AHB_epitopes.sorted.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Pol_domains.gff",
+      "name": "Pol domains",
+      "assemblyNames": [
+        "Pol"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "Pol_domains.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "Pol_domains.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Pol_drug_resistant_mutations.gff",
+      "name": "Pol drug resistant mutations",
+      "assemblyNames": [
+        "Pol"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "Pol_drug_resistant_mutations.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "Pol_drug_resistant_mutations.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_X_A",
+      "name": "Genbank X A Entropy",
+      "assemblyNames": [
+        "X"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_X_A.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_X_B",
+      "name": "Genbank X B Entropy",
+      "assemblyNames": [
+        "X"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_X_B.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_X_C",
+      "name": "Genbank X C Entropy",
+      "assemblyNames": [
+        "X"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_X_C.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_X_D",
+      "name": "Genbank X D Entropy",
+      "assemblyNames": [
+        "X"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_X_D.bw"
+        }
+      }
+    },
+    {
+      "type": "QuantitativeTrack",
+      "trackId": "Genbank_X_All_Genotypes",
+      "name": "Genbank X All Genotpes Entropy",
+      "assemblyNames": [
+        "X"
+      ],
+      "adapter": {
+        "type": "BigWigAdapter",
+        "bigWigLocation": {
+          "uri": "Genbank_X_All_Genotypes.bw"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "X_CTL_CHB_epitopes.sorted.gff",
+      "name": "X CTL CHB Epitopes",
+      "assemblyNames": [
+        "X"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "X_CTL_CHB_epitopes.sorted.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "X_CTL_CHB_epitopes.sorted.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "X_T-helper_CHB_epitopes.gff",
+      "name": "X T-helper CHB Epitopes",
+      "assemblyNames": [
+        "X"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "X_T-helper_CHB_epitopes.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "X_T-helper_CHB_epitopes.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "X_domains.gff",
+      "name": "X domains",
+      "assemblyNames": [
+        "X"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "X_domains.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "X_domains.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "X_host_protein_binding.gff",
+      "name": "X host protein binding",
+      "assemblyNames": [
+        "X"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "X_host_protein_binding.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "X_host_protein_binding.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "HBV Genome.gff",
+      "name": "HBV Proteins",
+      "assemblyNames": [
+        "HBV Genome"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "HBV Genome.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "HBV Genome.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "X_Antibody_epitopes.gff",
+      "name": "X Antibody Epitopes",
+      "assemblyNames": [
+        "X"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "X_Antibody_epitopes.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "X_Antibody_epitopes.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "X_special_epitopes.gff",
+      "name": "X special epitopes",
+      "assemblyNames": [
+        "X"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "X_special_epitopes.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "X_special_epitopes.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "S_special_epitopes.gff",
+      "name": "S special epitopes",
+      "assemblyNames": [
+        "S"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "S_special_epitopes.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "S_special_epitopes.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Pol_special_epitopes.gff",
+      "name": "Pol Special Eptiopes",
+      "assemblyNames": [
+        "Pol"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "Pol_special_epitopes.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "Pol_special_epitopes.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    },
+    {
+      "type": "FeatureTrack",
+      "trackId": "Core_special_epitopes.gff",
+      "name": "Core Special Epitopes",
+      "assemblyNames": [
+        "Core"
+      ],
+      "adapter": {
+        "type": "Gff3TabixAdapter",
+        "gffGzLocation": {
+          "uri": "Core_special_epitopes.gff.gz"
+        },
+        "index": {
+          "location": {
+            "uri": "Core_special_epitopes.gff.gz.tbi"
+          },
+          "indexType": "TBI"
+        }
+      }
+    }
+  ]
+}
